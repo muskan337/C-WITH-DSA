@@ -1,85 +1,131 @@
 # C-WITH-DSA
 
-My C++ and Data Structures & Algorithms practice repo. It starts from C++ basics and moves through arrays, binary search, sorting, recursion/backtracking, OOP and linked lists. Files are numbered in the order I worked through them.
+C++ and Data Structures & Algorithms practice, organized by topic. It starts from language basics and builds through arrays, binary search, sorting, recursion and backtracking, OOP and linked lists.
 
-> Many files keep earlier attempts as commented-out blocks above the final solution, so the evolution from brute force to optimized approach is visible in the same file.
+> Many files keep earlier attempts as commented-out blocks above the final solution, so the progression from brute force to optimized approach is visible in the same file. Each `.cpp` is a standalone program with its own `main()`.
 
 ## Repository structure
 
-The repo is flat: each `NN.cpp` is a self-contained program with its own `main()`.
+```
+C-WITH-DSA/
+├── 01_basics/
+├── 02_arrays_and_vectors/
+├── 03_pointers/
+├── 04_binary_search/
+├── 05_sorting/
+├── 06_stl_and_strings/
+├── 07_math_and_matrices/
+├── 08_recursion_and_backtracking/
+├── 09_oop/
+├── 10_linked_list/
+└── scratch/            # incomplete / experimental code
+```
 
-| File | Topic | What's inside |
-|------|-------|---------------|
-| `2.cpp` | C++ basics | Data types, type conversion and casting, `cin`/`cout`, arithmetic operators |
-| `3.cpp` | Loops and patterns | Nested-loop pattern printing (number, character and star patterns) |
-| `4.cpp` | Functions | Definition and calling, return values, sum of `n`, factorial, Fibonacci, digit sum, binomial coefficient |
-| `5.cpp` | Number systems | Decimal to binary and binary to decimal conversion |
-| `8.cpp` | Arrays | Declaration, `sizeof` size calculation, passing arrays to functions, linear search, reversing an array |
-| `9.cpp` | Vectors | `vector` basics, `push_back`, `size` vs `capacity` |
-| `10.cpp` | Subarrays | Printing all subarrays (brute force), maximum subarray sum |
-| `11.cpp` | Array problems | Two Sum (brute force and two pointers), Majority Element (Moore's voting) |
-| `12.cpp` | Prefix/suffix | Product of Array Except Self (brute force, then prefix and suffix arrays) |
-| `NEW11.cpp` | Two pointers | Container With Most Water (brute force, then two pointers) |
-| `15.cpp` | Math / arrays | Power function using binary exponentiation, Best Time to Buy and Sell Stock |
-| `16.cpp` | Pointers | Address-of, dereferencing, pointer to pointer, `NULL` pointers, pointer arithmetic |
-| `17.cpp` | Binary search | Iterative and recursive binary search |
-| `20.cpp` | Binary search on answer | Allocate Books / book allocation (minimize the maximum pages) |
-| `22.cpp` | Binary search on answer | Painter's Partition (minimum time to paint boards) |
-| `23.cpp` | Binary search on answer | Aggressive Cows (maximize the minimum distance) |
-| `24.cpp` | Sorting | Bubble sort (with early-exit optimization) and selection sort |
-| `27.cpp` | STL | Vector, list, deque, stack, queue, map, unordered_map, set and pair operations |
-| `29.cpp` | Strings | C-style character arrays, `getline`, `std::string` operations |
-| `34.cpp` | Number theory | Primality check (brute force to optimized `i*i <= n`) |
-| `35.cpp` | 2D arrays | Matrix search, row and column sums, maximum row sum |
-| `42.cpp` | Recursion | Print numbers, factorial, Fibonacci |
-| `47.cpp` | Backtracking | Rat in a Maze: all paths from top-left to bottom-right |
-| `49.cpp` | Backtracking | Combination Sum (take/skip recursion), work in progress |
-| `50.cpp` | Backtracking | Palindrome Partitioning, work in progress |
-| `51.cpp` | Numerical methods / sorting | Bisection method for root finding, merge sort |
-| `52.cpp` | Sorting | Quick sort (partition with last element as pivot) |
-| `53.cpp` | Divide and conquer | Count Inversions using merge sort |
-| `54.cpp` | OOP | Classes, access specifiers, constructors (default, parameterized, copy), `this`, static members, destructors |
-| `57.cpp` | Linked list | Singly linked list class: `push_front`, `push_back`, `insert`, `pop_front`, `pop_back`, search, print |
-| `58.cpp` | Linked list | Reverse a linked list (iterative) |
-| `59.cpp` | Linked list | Find the middle node (slow/fast pointers) |
-| `60.CPP` | Linked list | Cycle detection (Floyd's algorithm) and finding the cycle's starting node |
+File names are the order in which I solved things, so numbers have gaps.
 
-## Topic roadmap
+### 01_basics
+| File | Contents |
+|------|----------|
+| `2.cpp` | Data types, type conversion and casting, `cin`/`cout`, arithmetic operators |
+| `3.cpp` | Nested loops and pattern printing (numbers, characters, stars) |
+| `4.cpp` | Functions: definition, calling, return values; sum of `n`, factorial, Fibonacci, digit sum, binomial coefficient |
+| `5.cpp` | Decimal to binary and binary to decimal conversion |
 
-1. **C++ fundamentals:** types, I/O, operators, loops, functions (`2`-`5`)
-2. **Arrays and vectors:** traversal, subarrays, prefix/suffix, two pointers (`8`-`15`, `NEW11`)
-3. **Pointers:** `16`
-4. **Searching:** binary search and binary search on answer (`17`, `20`, `22`, `23`)
-5. **Sorting:** bubble, selection, merge, quick (`24`, `51`, `52`, `53`)
-6. **STL and strings:** `27`, `29`
-7. **Math and matrices:** `34`, `35`
-8. **Recursion and backtracking:** `42`, `47`, `49`, `50`
-9. **OOP in C++:** `54`
-10. **Linked lists:** `57`-`60`
+### 02_arrays_and_vectors
+| File | Contents |
+|------|----------|
+| `8.cpp` | Arrays: `sizeof` size calculation, passing to functions, linear search, reversing |
+| `9.cpp` | Vectors: `push_back`, `size` vs `capacity` |
+| `10.cpp` | Printing all subarrays; maximum subarray sum (brute force) |
+| `11.cpp` | Two Sum (brute force and two pointers); Majority Element (Moore's voting) |
+| `12.cpp` | Product of Array Except Self (brute force, then prefix and suffix arrays) |
+| `NEW11.cpp` | Container With Most Water (brute force, then two pointers) |
+| `15.cpp` | Power function via binary exponentiation; Best Time to Buy and Sell Stock |
+
+### 03_pointers
+| File | Contents |
+|------|----------|
+| `16.cpp` | Address-of, dereferencing, pointer to pointer, `NULL`, pointer arithmetic |
+
+### 04_binary_search
+| File | Contents |
+|------|----------|
+| `17.cpp` | Binary search, iterative and recursive |
+| `20.cpp` | Book Allocation: minimize the maximum pages (binary search on answer) |
+| `22.cpp` | Painter's Partition: minimum time to paint boards |
+| `23.cpp` | Aggressive Cows: maximize the minimum distance |
+
+### 05_sorting
+| File | Contents |
+|------|----------|
+| `24.cpp` | Bubble sort (with early-exit optimization) and selection sort |
+| `51.cpp` | Merge sort; also the bisection method for root finding |
+| `52.cpp` | Quick sort (partition around the last element) |
+| `53.cpp` | Count Inversions using merge sort |
+
+### 06_stl_and_strings
+| File | Contents |
+|------|----------|
+| `27.cpp` | STL: vector, list, deque, stack, queue, map, unordered_map, set, pair |
+| `29.cpp` | C-style character arrays, `getline`, `std::string` operations |
+
+### 07_math_and_matrices
+| File | Contents |
+|------|----------|
+| `34.cpp` | Primality check, from brute force to the `i*i <= n` optimization |
+| `35.cpp` | 2D arrays: searching, row and column sums, maximum row sum |
+
+### 08_recursion_and_backtracking
+| File | Contents |
+|------|----------|
+| `42.cpp` | Recursion basics: print numbers, factorial, Fibonacci |
+| `47.cpp` | Rat in a Maze: all paths from top-left to bottom-right |
+| `49.cpp` | Combination Sum (take/skip recursion), work in progress |
+| `50.cpp` | Palindrome Partitioning, work in progress |
+
+### 09_oop
+| File | Contents |
+|------|----------|
+| `54.cpp` | Classes, access specifiers, constructors (default, parameterized, copy), `this`, static members, destructors |
+
+### 10_linked_list
+| File | Contents |
+|------|----------|
+| `57.cpp` | Singly linked list class: `push_front`, `push_back`, `insert`, `pop_front`, `pop_back`, search, print |
+| `58.cpp` | Reverse a linked list (iterative) |
+| `59.cpp` | Find the middle node (slow/fast pointers) |
+| `60.cpp` | Cycle detection (Floyd's algorithm) and finding the cycle's start node |
+
+### scratch
+| File | Contents |
+|------|----------|
+| `gugfu.cpp` | Unfinished experiments (decimal/binary conversion, a character-compression attempt); does not compile |
 
 ## Complexity highlights
 
 | Problem | Brute force | Optimized |
 |---------|-------------|-----------|
-| Two Sum (sorted) | O(n²) | O(n) two pointers |
-| Product Except Self | O(n²) | O(n) prefix/suffix |
-| Container With Most Water | O(n²) | O(n) two pointers |
+| Two Sum (sorted) | O(n²) | O(n), two pointers |
+| Product Except Self | O(n²) | O(n), prefix/suffix |
+| Container With Most Water | O(n²) | O(n), two pointers |
 | Primality check | O(n) | O(√n) |
-| Book allocation / Painter's / Aggressive Cows | O(range × n) | O(n log(range)) |
+| Book allocation / Painter's / Aggressive Cows | O(range × n) | O(n log range) |
 | Sorting | O(n²) bubble/selection | O(n log n) merge/quick (quick is O(n²) worst case) |
 | Count Inversions | O(n²) | O(n log n) |
-| Linked list cycle / middle | extra space | O(n) time, O(1) space |
+| Linked list middle / cycle | extra space | O(n) time, O(1) space |
 
 ## How to run
 
 ```bash
-g++ -std=c++17 17.cpp -o out
-./out        # on Windows: out.exe
+g++ -std=c++17 04_binary_search/17.cpp -o out
+./out          # Windows: out.exe
 ```
+
+Compiled binaries are git-ignored.
 
 ## Status
 
-Ongoing practice. `49.cpp`, `50.cpp` and `gugfu.cpp` are scratch or incomplete and may not compile yet. `46.CPP`, `48.cpp` and `tempCodeRunnerFile.cpp` are empty placeholders.
+Ongoing practice. `49.cpp` and `50.cpp` are unfinished and don't compile yet (undeclared variables and typos), and everything in `scratch/` is experimental. The rest are working solutions.
 
 ## Author
 

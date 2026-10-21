@@ -36,11 +36,11 @@ File names are the order in which I solved things, so numbers have gaps. Every f
 |------|----------|
 | `8.cpp` | Arrays: `sizeof` size calculation, passing to functions, linear search, reversing |
 | `9.cpp` | Vectors: `push_back`, `size` vs `capacity` |
-| `10.cpp` | Printing all subarrays; maximum subarray sum (brute force) |
+| `10.cpp` | Printing all subarrays; maximum subarray sum (brute force and Kadane's) |
 | `11.cpp` | Two Sum (brute force and two pointers); Majority Element (Moore's voting) |
 | `12.cpp` | Product of Array Except Self (brute force, then prefix and suffix arrays) |
 | `NEW11.cpp` | Container With Most Water (brute force, then two pointers) |
-| `15.cpp` | Power function via binary exponentiation; Best Time to Buy and Sell Stock |
+| `15.cpp` | Best Time to Buy and Sell Stock (plus a commented-out, buggy power-function attempt) |
 
 ### 03_pointers
 | File | Contents |

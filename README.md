@@ -21,7 +21,7 @@ C-WITH-DSA/
 └── scratch/            # incomplete / experimental code
 ```
 
-File names are the order in which I solved things, so numbers have gaps.
+File names are the order in which I solved things, so numbers have gaps. Every folder has its own `README.md` with a detailed breakdown.
 
 ### 01_basics
 | File | Contents |
